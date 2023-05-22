@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <title>Solar Green | Contacto</title>
+    <link rel="stylesheet" href="./css/estilof.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" type="image/png" href="./imagenes/logo.png">
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="./imagenes/logo.png" alt="Logo" id="headerLogo">
+            <ul class="quickItems">
+                <li class="quickElements">
+                    <h1>
+                        <a href="./index.html" class="cleanLink">
+                            ¿Quiénes Somos?
+                        </a>
+                    </h1>
+                </li>
+                <li class="quickElements">
+                    <h1>
+                        <a href="./paneles.html" class="cleanLink">
+                            Paneles solares
+                        </a>
+                    </h1>
+                </li>
+                <li class="quickElements">
+                    <h1>
+                        <a href="./termotanques.html" class="cleanLink">
+                            Termotanques Solares
+                        </a>
+                    </h1>
+                </li>
+                <li class="quickElements">
+                    <!--- cambias el quickElements por un cleanLink, y el que haces vos cambialo por quickElements y subrayalo con <ins></ins> -->
+                    <h1>
+                        <ins>
+                            Contáctanos
+                        </ins>
+                    </h1>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="barraSeparacion">
+
+        </div>
+
+        <div id="weather"></div> <!--Esto es para el consumo de la API -->
+
+        <form action="">
+            <h2>Formulario de Contacto</h2>
+            <div id='resultadoValidacion'></div>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+            <input type="text" id='apellido' name="apellido" placeholder="Apellido">
+            <input type="email" id='email' name="email" placeholder="Email">
+            <input type="tel" name="telefono" placeholder="Teléfono">
+            <textarea name="mensaje" placeholder="Escriba su mensaje"></textarea>
+            <input value="Enviar" id="boton" onclick="validar()">
+        </form>
+
+
+
+
+        <button class="btn-scrolltop" id="btn_scrolltop">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </main>
+
+    <footer>
+
+        <div class="footer">
+            <img src="./imagenes/logonobg.png" alt="Logo" id="footerLogo">
+
+            <p class="copyright">
+                Copyright © 2004-2023 Solar Green Corp. Todos los derechos reservados.
+            </p>
+
+            <a target="_blank" href="https://instagram.com/greensolaris"><img src="./imagenes/igicon.png" alt="Logo"
+                    id="igContact"></a>
+            <a target="_blank" href="https://facebook.com/GreenSolarSystems"><img src="./imagenes/fbicon.png" alt="Logo"
+                    id="fbContact"></a>
+            <a target="_blank" href="https://whatsapp.com/"><img src="./imagenes/waicon.png" alt="Logo"
+                    id="waContact"></a>
+            <a target="_blank" href="https://linkedin.com/company/solargreen1"><img src="./imagenes/liicon.png"
+                    alt="Logo" id="liContact"></a>
+
+        </div>
+
+    </footer>
+
+    <script src="./js/entornof.js"></script>
+</body>
+
+</html>

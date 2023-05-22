@@ -1,0 +1,245 @@
+/*Encabezado*/
+
+.cleanLink {
+    text-decoration: none;
+    color: #000;
+    transition: border-bottom .3s, color .3s;
+    border-bottom: 0px;
+}
+
+.cleanLink:hover {
+    border-bottom: 2px solid #CCC;
+    color: #909090;
+}
+
+.header {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: #FFF;
+    color: #909090;
+    font-size: 8px;
+    position: relative;
+    top: 15;
+    left: 0;
+    width: 100vw;
+    font-family: Comfortaa;
+}
+
+.quickItems {
+    list-style: none;
+}
+
+.quickElements {
+    display: inline-block;
+    padding: 0px 6.4vw;
+}
+
+
+#headerLogo {
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    left: 2vw;
+    top: 10px;
+}
+
+/*Encabezado*/
+
+html {
+    scroll-behavior: smooth;
+    /*para que suba y baje suave*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 1000;
+}
+
+.barraSeparacion {
+    width: 100vw;
+    height: 4vh;
+    display: flex;
+    background-color: rgb(117, 196, 169);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+
+/*Formulario*/
+/* Contacto */
+form {
+    width: 40vw;
+    margin: auto;
+    background-color: rgb(117, 196, 169);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 6%;
+    margin-bottom: 10%;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: oblique;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton {
+    background-color: #004D40;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+#boton:hover {
+    cursor: pointer;
+    background-color: #A7FFEB;
+    color: black;
+}
+
+iframe {
+    overflow: hidden;
+    margin: 10px;
+    padding: 20px;
+}
+
+/*Formulario*/
+/* Contacto */
+
+/*consumo de la API*/
+#weather {
+    margin-top: 4vw;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*consumo de la API*/
+
+
+/*boton ir para arriba*/
+.btn-scrolltop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    background: rgb(117, 196, 169);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 1;
+    transform: translateY(100px);
+    transition: 0.3s;
+}
+
+.btn-scrolltop-on {
+    transform: translateY(0);
+}
+
+
+/*footer*/
+
+.footer {
+    padding-top: 15px;
+    left: 0px;
+    text-align: center;
+    background: rgb(117, 196, 169);
+    color: rgb(144, 144, 144);
+    font-size: 8px;
+    position: absolute;
+    bottom: -150;
+    /* 850 - la altura */
+    width: 100vw;
+    height: 200px;
+    font-family: Comfortaa;
+}
+
+#footerLogo {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -60px;
+    right: 50vw;
+    left: 50vw;
+}
+
+.copyright {
+    color: rgb(0, 0, 0);
+    font-family: Lexend;
+    font-size: 9px;
+    position: relative;
+    text-align: center;
+    bottom: -150;
+    top: 160px;
+}
+
+#igContact {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    right: 45px;
+    top: 90px;
+}
+
+#fbContact {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    right: 10px;
+    top: 90px;
+}
+
+#waContact {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    right: -42px;
+    top: 90px;
+}
+
+#liContact {
+    height: 30px;
+    width: 53px;
+    position: relative;
+    right: -65px;
+    top: 90px;
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    form {
+        width: 60%;
+    }
+}

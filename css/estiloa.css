@@ -1,0 +1,305 @@
+/*Encabezado*/
+
+.cleanLink {
+    text-decoration: none;
+    color: #000;
+    transition: border-bottom .3s, color .3s;
+    border-bottom: 0px;
+}
+
+.cleanLink:hover {
+    border-bottom: 2px solid #CCC;
+    color: #909090;
+}
+
+.header {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: #FFF;
+    color: #909090;
+    font-size: 8px;
+    position: relative;
+    top: 15;
+    left: 0;
+    width: 100vw;
+    font-family: Comfortaa;
+}
+
+.quickItems {
+    list-style: none;
+}
+
+.quickElements {
+    display: inline-block;
+    padding: 0px 6.4vw;
+}
+
+
+#headerLogo {
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    left: 2vw;
+    top: 10px;
+}
+
+/*Encabezado*/
+
+html {
+    scroll-behavior: smooth;
+    /*para que suba y baje suave*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 1000;
+}
+
+h1 {
+    font-size: 2em;
+
+}
+
+h2,
+h3 {
+    text-align: center;
+    margin: 0.6em 1em;
+    font-family: 'Roboto', sans-serif;
+    font-style: oblique;
+    font-size: 2em;
+
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.contenedorImg {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    background-color: rgb(117, 196, 169);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #000;
+    text-align: center;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0px 10px;
+    font-family: 'Roboto', sans-serif;
+    border: solid 1px rgb(117, 196, 169);
+    border-radius: 14px;
+    margin: 0 10vw;
+    text-align: center;
+}
+
+
+.grid-item0 {
+    grid-row: 1;
+    text-align: center;
+}
+
+.grid-item1 {
+    grid-row: 2;
+    text-align: justify;
+    padding: 1vw;
+
+}
+
+.grid-item2 {
+    grid-row: 3;
+    text-align: center;
+
+}
+
+.grid-item3 {
+    grid-row: 4;
+    padding: 5%;
+    text-align: justify;
+}
+
+.grid-item4 {
+    grid-row: 5;
+    text-align: center;
+}
+
+.grid-item5 {
+    grid-row: 6;
+    padding: 5%;
+    text-align: justify;
+}
+
+.grid-item6 {
+    grid-row: 7;
+    font-size: large;
+    font-weight: bold;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 30%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 5%;
+    border-radius: 14px;
+    padding: 30px;
+    text-align: center;
+}
+
+
+.grid-item13 a img {
+    border: none;
+    width: 90%;
+    padding-left: 30px;
+
+}
+
+.grid-item14 a img {
+    border: none;
+    width: 80%;
+    padding-left: 60px;
+
+}
+
+.grid-item15 a img {
+    border: none;
+    width: 70%;
+    padding-left: 60px;
+
+}
+
+.grid-item16 a img {
+    border: none;
+    width: 70%;
+    padding-left: 30px;
+}
+
+.opacity.hover {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    /* Agregar transición suave al cambio de opacidad */
+
+}
+
+.opacity-hover:hover {
+    opacity: 0.7;
+    /* Cambiar la opacidad de la imagen al pasar el cursor sobre ella */
+}
+
+
+/* Multimedia */
+
+.video {
+    box-shadow: 0 4px 8px 0 rgb(117, 196, 169, 0.6);
+    transition: 0.3s;
+    width: 48vw;
+    height: 27vw;
+    border-radius: 5px;
+    margin: 0px auto;
+}
+
+.imagen {
+    box-shadow: 0 4px 8px 0 rgb(117, 196, 169, 0.6);
+    transition: 0.3s;
+    width: 60vw;
+    border-radius: 5px;
+    margin: 0px auto;
+}
+
+/*boton ir para arriba*/
+.btn-scrolltop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    background: #75C4A9;
+    color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 1;
+    transform: translateY(100px);
+    transition: 0.3s;
+}
+
+.btn-scrolltop-on {
+    transform: translateY(0);
+}
+
+/*footer*/
+
+.footer {
+    padding-top: 15px;
+    left: 0px;
+    text-align: center;
+    background: #75C4A9;
+    color: #909090;
+    font-size: 8px;
+    position: absolute;
+    bottom: -150;
+    /* 850 - la altura */
+    width: 100vw;
+    height: 200px;
+    font-family: Comfortaa;
+}
+
+#footerLogo {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -60px;
+    right: 50vw;
+    left: 50vw;
+}
+
+.copyright {
+    color: #000;
+    font-family: Lexend;
+    font-size: 9px;
+    position: relative;
+    text-align: center;
+    bottom: -150;
+    top: 160px;
+}
+
+#igContact {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    right: 45px;
+    top: 90px;
+}
+
+#fbContact {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    right: 10px;
+    top: 90px;
+}
+
+#waContact {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    right: -42px;
+    top: 90px;
+}
+
+#liContact {
+    height: 30px;
+    width: 53px;
+    position: relative;
+    right: -65px;
+    top: 90px;
+}
